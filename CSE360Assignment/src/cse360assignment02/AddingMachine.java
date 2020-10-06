@@ -14,12 +14,12 @@ public class AddingMachine {
   }
   
   public void add (int value) {
-	  total = value + total; //adds value to total
+	  total = total + value; //adds value to total
 	  history = history + "+" + value; //uses history as a toString
   }
 
   public void subtract (int value) {
-	  total = value - total; //subtracts value to total
+	  total = total - value; //subtracts value to total
 	  history = history + "-" + value; //uses history as a toString
   }
 
@@ -28,7 +28,8 @@ public class AddingMachine {
   }
 
   public void clear() {
-	  System.gc(); //clears memory
+	  total = 0; //clears memory
+	  history = "0";
   }
   
 }
